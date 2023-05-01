@@ -1,0 +1,22 @@
+fetch(url, {
+    method:"Post",
+    headers:{
+        authorization: Bearer
+    }
+})
+
+
+Notes Taking App
+Users Routes
+==> /users/register; To register a new users
+==> /users/login: For Authenticating the registered user
+
+
+For below routes to work the user needs to be authenticated(that user should have a t)
+Notes Routes
+==> /notes/create: Creating a new note about some concept that you have learnt
+
+Need to check who is making the changes or getting the note(1 - many Relationship)
+==> /notes: To Get all the created notes
+==> /notes/update/:noteID: To update any note
+==> /notes/delete/:noteId: To delete a note
